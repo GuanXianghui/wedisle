@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- 
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+
+    <include file="example.xml"/>
+
+
+
+    <package name="default" namespace="/" extends="struts-default">
+        <default-action-ref name="index" />
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">HelloWorld</param>
+                <param name="namespace">/example</param>
+            </result>
+        </action>
+    </package>
+	 -->
+	 
+	 
+	<constant name="struts.devMode" value="true" />
+	<package name="default" namespace="/" extends="struts-default">
+        <action name="createTopic" class="com.gxx.record.CreateTopicAction">
+            <result type="redirect">
+                /viewtopic.jsp?tid=${tid}
+            </result>
+            <result name="error">
+                /viewsection.jsp
+            </result>
+        </action>
+        <action name="replyTopic" class="com.gxx.record.ReplyTopicAction">
+            <result type="redirect">
+                /viewtopic.jsp?tid=${tid}&amp;pageNum=${pageNum}
+            </result>
+            <result name="error">
+                /viewtopic.jsp?tid=${tid}
+            </result>
+        </action>
+        <action name="register" class="com.gxx.record.RegisterAction">
+            <result name="success">
+                /index.jsp
+            </result>
+            <result name="error">
+                /register.jsp
+            </result>
+        </action>
+        <action name="login" class="com.gxx.record.LoginAction">
+            <result name="success">
+                /index.jsp
+            </result>
+            <result name="error">
+                /index.jsp
+            </result>
+        </action>
+        <action name="logOut" class="com.gxx.record.LogOutAction">
+            <result>
+                /index.jsp
+            </result>
+        </action>
+        <action name="updateBaseInfo" class="com.gxx.record.UpdateBaseInfoAction">
+            <result>
+                /configuser.jsp?menu=1
+            </result>
+            <result name="error">
+                /configuser.jsp?menu=1
+            </result>
+        </action>
+        <action name="uploadHeadPhoto" class="com.gxx.record.UploadHeadPhotoAction">
+            <result>
+                /configuser.jsp?menu=2
+            </result>
+            <result name="error">
+                /configuser.jsp?menu=2
+            </result>
+        </action>
+        <action name="updatePassword" class="com.gxx.record.UpdatePasswordAction">
+            <result>
+                /configuser.jsp?menu=3
+            </result>
+            <result name="error">
+                /configuser.jsp?menu=3
+            </result>
+        </action>
+        <action name="createRecord" class="com.gxx.record.CreateRecordAction">
+            <result type="redirect">
+                /records.jsp?menu=3&amp;rid=${recordId}
+            </result>
+            <result name="error">
+                /records.jsp?menu=2
+            </result>
+        </action>
+        <action name="deleteRecord" class="com.gxx.record.DeleteRecordAction">
+            <result>
+                /records.jsp
+            </result>
+            <result name="error">
+                /records.jsp
+            </result>
+        </action>
+        <action name="deleteTopic" class="com.gxx.record.DeleteTopicAction">
+            <result>
+                /viewsection.jsp?sid=${sid}
+            </result>
+            <result name="error">
+                /records.jsp
+            </result>
+        </action>
+        <action name="deleteReply" class="com.gxx.record.DeleteReplyAction">
+            <result>
+                /viewtopic.jsp?tid=${tid}
+            </result>
+            <result name="error">
+                /viewtopic.jsp?tid=${tid}
+            </result>
+        </action>
+
+        <action name="addNode" class="ztree.AddNodeAction">
+        </action>
+        <action name="renameNode" class="ztree.RenameNodeAction">
+        </action>
+        <action name="removeNode" class="ztree.RemoveNodeAction">
+        </action>
+        <action name="moveNode" class="ztree.MoveNodeAction">
+        </action>
+        <action name="editArticle" class="ztree.EditArticleAction">
+            <result>
+                /wedding/ztree/showArticle.jsp
+            </result>
+            <result name="edit">
+                /wedding/ztree/editArticle.jsp
+            </result>
+        </action>
+
+        <action name="signInWedisle" class="com.gxx.record.wedisle.SignInAction">
+            <result name="success">
+                /main.jsp
+            </result>
+            <result name="error">
+                /signin.jsp
+            </result>
+        </action>
+        <action name="loginWedisle" class="com.gxx.record.wedisle.LoginAction">
+            <result name="success">
+                /main.jsp
+            </result>
+            <result name="error">
+                /login.jsp
+            </result>
+        </action>
+        <action name="addRelaFriend" class="com.gxx.record.wedisle.AddRelaFriendAction">
+            <result name="success">
+                /test/testAddRelaFriend.jsp
+            </result>
+            <result name="error">
+                /test/testAddRelaFriend.jsp
+            </result>
+        </action>
+        <action name="saveSeat" class="com.gxx.record.wedisle.SaveSeatAction">
+            <result name="success">
+                /tool/tool_seat.jsp
+            </result>
+            <result name="error">
+                /tool/tool_seat.jsp
+            </result>
+        </action>
+        <action name="addMarryRegist" class="com.gxx.record.wedisle.AddMarryRegistAction">
+            <result name="success">
+                /tool/regist/configMarryRegist.jsp
+            </result>
+            <result name="error">
+                /tool/regist/configMarryRegist.jsp
+            </result>
+        </action>
+        <action name="updateRelaFriend" class="com.gxx.record.wedisle.UpdateRelaFriendAction">
+            <result name="success">
+                /main/friends_book.jsp
+            </result>
+            <result name="error">
+                /main/friends_book.jsp
+            </result>
+        </action>
+        <action name="deleteRelaFriend" class="com.gxx.record.wedisle.DeleteRelaFriendAction">
+            <result name="success">
+                /main/friends_book.jsp
+            </result>
+            <result name="error">
+                /main/friends_book.jsp
+            </result>
+        </action>
+        <action name="updateHelpGroup" class="com.gxx.record.wedisle.UpdateHelpGroupAction">
+            <result name="success">
+                /main/friends_book.jsp
+            </result>
+            <result name="error">
+                /main/friends_book.jsp
+            </result>
+        </action>
+        <action name="deleteHelpGroup" class="com.gxx.record.wedisle.DeleteHelpGroupAction">
+            <result name="success">
+                /main/friends_book.jsp
+            </result>
+            <result name="error">
+                /main/friends_book.jsp
+            </result>
+        </action>
+        <action name="deleteWorker" class="com.gxx.record.wedisle.DeleteWorkerAction">
+            <result name="success">
+                /main/friends_book.jsp
+            </result>
+            <result name="error">
+                /main/friends_book.jsp
+            </result>
+        </action>
+        <action name="mainStepManage" class="com.gxx.record.wedisle.MainStepManageAction">
+            <result name="success">
+                /tool/step/mainStepManage.jsp
+            </result>
+            <result name="error">
+                /tool/step/mainStepManage.jsp
+            </result>
+        </action>
+    </package>
+
+
+    <package name="locates" namespace="/locates" extends="default">
+        <action name="registerUser" class="locates.RegisterUserAction">
+            <result name="success">
+                testLocates.jsp
+            </result>
+            <result name="error">
+                testLocates.jsp
+            </result>
+        </action>
+        <action name="setPenParam" class="locates.SetPenParamAction">
+            <result name="success">
+                testLocates.jsp
+            </result>
+            <result name="error">
+                testLocates.jsp
+            </result>
+        </action>
+        <action name="setPenStatus" class="locates.SetPenStatusAction">
+            <result name="success">
+                testLocates.jsp
+            </result>
+            <result name="error">
+                testLocates.jsp
+            </result>
+        </action>
+        <action name="setListen" class="locates.SetListenAction">
+            <result name="success">
+                testLocates.jsp
+            </result>
+            <result name="error">
+                testLocates.jsp
+            </result>
+        </action>
+        <action name="uploadPosition" class="locates.UploadPositionAction">
+            <result name="success">
+                testLocates.jsp
+            </result>
+            <result name="error">
+                testLocates.jsp
+            </result>
+        </action>
+        <action name="loadMovie" class="locates.LoadMovieAction"/>
+        <action name="loadListenDetails" class="locates.LoadListenDetailsAction"/>
+    </package>
+</struts>
+
+
+

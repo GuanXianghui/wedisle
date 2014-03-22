@@ -1,0 +1,18 @@
+create table user(		#用户表
+	id int auto_increment primary key,	#自增 主键
+	user_name varchar(30) unique not null,	#帖子id 不为空
+	password varchar(32) not null,	#用户id 不为空
+	email varchar(100) not null,		#内容 不为空
+	head_photo varchar(500) not null, #头像地址 不为空
+	user_type int not null,   #用户类型 0普通用户 1超级管理员 关联UserType
+	user_state int not null,  #用户状态 1正常 2锁定 3删除
+    sex int,  #性别 1 男 0 女
+    birthday varchar(8),  #生日
+    score int, #积分
+	register_date varchar(8) not null,	#注册日期 不为空
+	register_time varchar(6) not null,	#注册时间 不为空
+	register_ip varchar(20) not null,	#注册IP 不为空
+	visit_date varchar(8) not null,	#最后访问日期 不为空
+	visit_time varchar(6) not null,	#最后访问时间 不为空
+	visit_ip varchar(20) not null	#最后访问IP 不为空
+);

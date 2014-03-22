@@ -1,0 +1,9 @@
+create table wedisle_marry_regist(		#结婚登记处表
+	id int auto_increment primary key,	#结婚登记处ID 主键 自增(从1自增) 不为空
+	name varchar(30) not null unique,	#结婚登记处名 不为空 唯一
+	place varchar(100) not null,	#地址 不为空
+	phone varchar(500), #联系电话
+	time varchar(500), #办理时间
+	big_image_src varchar(500),	#大图
+	image_src varchar(500)	#图片
+);

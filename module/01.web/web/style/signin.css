@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.signinbox {
+	width:300px;
+	margin:0 auto;
+	background:#abc;
+	padding:25px;
+	padding-top:15px;
+	color:#333
+}
+.signinbox ul>li {
+	margin-bottom:10px
+}
+.signinbox li>input, .signinbox li>button {
+	width:300px;
+}
+.signinbox li>button {
+	line-height:40px;
+	font-size:18px;
+	height:40px;
+}

@@ -1,0 +1,4 @@
+create table image(		#图片表
+	id int auto_increment primary key,	#图片ID 主键 自增(从1自增) 不为空
+	path varchar(200) not null		#图片路径 不为空
+);

@@ -1,0 +1,368 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+}
+.headerShadowline {
+	height:80px;
+}
+.nav {
+	font-size:0;
+	line-height:0;
+	height:10px
+}
+.pagetitle {
+	border-left:solid 1px #999
+}
+.main {
+	background:none;
+	margin-top:0
+}
+.subbar {
+	z-index:2;
+	height:40px;
+	width:100%;
+	top:-20px;
+	text-align:right;
+	background:none;
+	box-shadow:0 0 0 transparent
+}
+.mainmod {
+	top:0;
+	box-shadow:0 0 0 transparent;
+	margin:0 auto;
+	margin-top:30px;
+	left:0;
+	width:100%;
+	border-left:none
+}
+/**** Isotope Filtering ****/
+
+
+
+.isotope-item {
+	z-index: 1;
+}
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+
+.mainmod {
+}
+.mainmod h1 {
+	width:1050px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:0;
+	padding-right:0;
+	margin:0 auto
+}
+.isotopeLayout {
+	width:1080px;
+	margin:0 auto
+}
+.isotope,  .isotope .isotope-item {
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-ms-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property:    -moz-transform, opacity;
+	-ms-transition-property:     -ms-transform, opacity;
+	-o-transition-property:      -o-transform, opacity;
+	transition-property:         transform, opacity;
+}
+.isotopeLayout .element {
+	width:240px;
+	margin:15px;
+	background-color:#eee;
+	filter: alpha(opacity=70);
+	background:rgba(255, 255, 255, .2);
+	box-shadow:0px 0px 1px #999;
+	position:relative;
+	float:left;
+}
+.isotopeLayout .element1 {
+	margin:15px;
+	background-color:#eee;
+	filter: alpha(opacity=70);
+	background:rgba(255, 255, 255, .2);
+	box-shadow:0px 0px 1px #999;
+	position:relative;
+	height:300px;
+}
+.element:hover, .element1:hover {
+	box-shadow:0px 0px 8px #666;
+}
+.element .bimg {
+}
+.element .binfo {
+	background:rgba(0,0,0,.8);
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.element a.bname {
+	display:block;
+	font:18px/32px "微软雅黑", Arial, sans-serif;
+	padding-left:20px;
+	padding-right:20px;
+	color:#fff
+}
+.element .binfo p {
+	color:#ccc
+}
+.element1 h3.bname {
+	line-height:3em;
+	padding-left:1em;
+	font-size:140%;
+	margin-bottom:10px;
+	border-bottom:solid 1px #eee
+}
+.element1 .bimg, .element1 .bPreview {
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:top
+}
+.element1 .bimg {
+	margin:10px 1.4em
+}
+.element1 .bPreview {
+	width:70%;
+	min-width:700px
+}
+.bPreview .bLabel {
+	width:13%
+}
+a.bComment, a.bThermal {
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	height:3em;
+	padding-left:50px;
+	padding-right:10px;
+	margin-right:10px
+}
+a.bComment {
+	background:url(../images/ico_chat2.png) 5px center no-repeat;
+}
+a.bThermal {
+	background:url(../images/ico_heart2.png) 5px center no-repeat
+}
+a.morebn, a:link.morebn, a:visited.morebn {
+	display:block;
+	text-align:center;
+	background:#333;
+	height:2em;
+	line-height:2em;
+	font-size:18px;
+	font-family:"微软雅黑", Arial, sans-serif;
+	margin-left:15px;
+	margin-right:15px;
+	margin-bottom:15px;
+	color:#ccc;
+}
+a.morebn, a:hover.morebn, a:active.morebn {
+	background:#207fb3;
+	color:#fff;
+}
+.isotopeLayout .pagination {
+	margin-left:15px;
+	margin-right:15px;
+}
+.isotopeLayout .pagination a, .isotopeLayout .pagination a:link, .isotopeLayout .pagination a:visited {
+	display:inline-block;
+    *display:inline;
+	zoom:1;
+	border-left:solid 1px #ccc;
+	color:#fff;
+	padding-left:1em;
+	padding-right:1em
+}
+.isotopeLayout .pagination a:hover {
+	background:#f60
+}
+.isotopeLayout .pagination a.current {
+	background:#207fb3;
+	cursor:default
+}
+.copyright {
+	border-top:dotted 1px #ccc;
+}
+
+.isotopeLayout .elementsp {
+	width:410px;
+	padding-bottom:100px;
+}
+.isotopeLayout .elementfree {
+	background:none;
+	box-shadow:0 0 0 #eee;
+	padding-bottom:0
+}
+.isotopeLayout .elementfree a.splink {
+	display:block;
+	height:200px;
+}
+.bShowMod {
+	box-sizing:border-box;
+	border:solid 1px #ccc;
+	margin:2em 1em;
+	font-size:14px;
+}
+.bImagebox, .bInfobox, .bRankbox {
+	box-sizing:border-box;
+	display:inline-block;
+	width:33%;
+	min-width:300px;
+	vertical-align:top
+}
+.bInfobox, .bRankbox {
+	padding-left:1.5em;
+	height:300px;
+}
+.bRankbox {
+	width:300px;
+	border-left:dashed 1px #ccc
+}
+.bImagebox {
+	max-height:300px;
+	overflow:hidden
+}
+.bImagebox img {
+	width:100%
+}
+h3.bname span, h3.bname a {
+	vertical-align:middle
+}
+.bInfobox ul li, .bRankbox ul li, .TabbedPanelsContent ul li, .bPreview ul li {
+	margin-bottom:1ex;
+	line-height:30px;
+	font-size:14px
+}
+.bLabel, .bValue, .rankValue {
+	display:inline-block;
+	vertical-align:top
+}
+.bLabel {
+	width:20%;
+	text-align:left;
+	max-width:10em
+}
+.bRankbox h3 {
+	margin-bottom:.3em
+}
+.avr {
+	font-size:150%
+}
+.avr .bLabel {
+	margin-top:1.2em
+}
+.avr .rankValue {
+	height:3.5em
+}
+.rankScore {
+	font-size:300%;
+	line-height:1em;
+	color:#f60
+}
+.bValue {
+	width:75%;
+	margin-left:1ex;
+}
+.rankValue {
+	width:150px;
+	height:30px;
+	margin-left:1ex;
+}
+.bRankbox .bLabel {
+	width:30%;
+}
+.ico_idt {
+	background:url(../images/ico_idt.gif) no-repeat;
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin-left:1ex
+}
+.TabbedPanelsContent h3 {
+	background:#eee;
+	padding-left:1em;
+	border-left:solid 2px #207fb3
+}
+/*Search n Filter*/
+input[type=text].searchText {
+	border-radius:20px;
+	padding:0;
+	margin:0;
+	border:solid 1px #ccc;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	font-family:"微软雅黑", Arial, sans-serif;
+	width:300px;
+	padding-left:20px;
+	padding-right:50px
+}
+.searchText:focus {
+	outline:none;
+	border-color:#06f;
+	box-shadow:0 0 5px #ccc
+}
+.searchBtn {
+	text-indent:-9999px;
+	background:url(../images/ico_search2.png) no-repeat;
+	width:40px;
+	height:40px;
+	margin-left:-50px
+}
+.searchText:focus+.searchBtn, .searchBtn:hover {
+	background:url(../images/ico_search.png) no-repeat;
+}
+.filterBox {
+	width:1050px;
+	margin:0 auto;
+	font-size:14px;
+}
+.filterBox dl {
+	margin-top:8px;
+	margin-bottom:8px
+}
+.filterBox dt, .filterBox dd {
+	display:inline-block;
+	*display:inline;
+	zoom:1
+}
+.filterBox dt {
+	width:6em;
+	font-weight:bold;
+}
+.filterBox dd {
+	margin-left:20px
+}
+label.filterOption {
+	padding:3px 10px;
+	padding-right:30px;
+	cursor:pointer
+}
+input.hideinput:checked+label.filterOption {
+	background:url(../images/ico_close.gif) right center no-repeat #207fb3;
+	color:#fff
+}
+.TabbedPanels {
+	margin-left:1em;
+	margin-right:1em;
+}

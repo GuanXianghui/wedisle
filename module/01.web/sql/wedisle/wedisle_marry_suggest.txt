@@ -1,0 +1,8 @@
+create table wedisle_marry_suggest(		#婚嫁建议表
+	year int not null,	#年
+	month int not null,	#月
+	legal_from char(8) not null,	#法定婚嫁开始日期
+	legal_end char(8) not null,	#法定婚嫁结束日期
+	late_from char(8) not null,	#晚婚嫁开始日期
+	late_end char(8) not null	#晚定婚嫁结束日期
+);

@@ -1,0 +1,10 @@
+create table score_log(		#积分变化日志表
+	id int auto_increment primary key,	#自增 主键
+	action_log_id int not null,	#动作日志id 不为空
+	user_id int not null,	#用户id 不为空
+	request_date varchar(8) not null,	#日期 不为空
+	request_time varchar(6) not null,	#时间 不为空
+	old_score int not null,	#老积分
+	change_score int not null,	#变化积分
+	new_score int not null #新积分
+);

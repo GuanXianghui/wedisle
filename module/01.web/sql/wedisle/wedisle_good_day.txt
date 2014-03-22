@@ -1,0 +1,11 @@
+create table wedisle_good_day(		#黄道吉日表
+	date char(8) not null unique,	#日期
+	gongli varchar(18),	#公历
+	nongli varchar(50), #农历
+	chong varchar(20),	#冲
+    yi varchar(300), #宜
+	ji varchar(300),	#忌
+    wuxing varchar(20), #五行
+    cisui varchar(50), #次岁
+    pengzubaiji varchar(50) #彭祖百忌
+);

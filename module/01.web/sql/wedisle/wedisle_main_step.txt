@@ -1,0 +1,8 @@
+create table wedisle_main_step(		#首页步骤表
+	id int auto_increment primary key,	#步骤ID 主键 自增(从1自增) 不为空
+	pid int not null,	#分类ID 不为空 当level=2，1表示婚礼筹划 2表示婚纱摄影 3表示酒店婚庆 4表示婚品布置 5表示大婚一周，当level=3，表示第二级的ID
+	level int not null, #级别 不为空 2表示第二级 3表示第三级
+	index_id int not null, #优先级 0~n 不为空
+	name varchar(200) not null,  #步骤名 不为空 可带链接激活工具
+	article_id int		#关联文章ID 可为空 当level=2是不可填 当level=3时可填可不填
+);

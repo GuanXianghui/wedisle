@@ -1,0 +1,13 @@
+create table locates_listen_detail( #定位监听详细表
+    id int primary key auto_increment, #主键自增
+    listen_id int not null, #定位监听ID
+    lat double not null, #维度
+    lng double not null, #经度
+    date_time varchar(14) not null, #时间点
+    is_pen_open int not null, #是否开启电子围栏 1开启 0关闭
+    pen_radius int, #电子围栏半径 米位单位
+    pen_center_lat double, #电子围栏中心维度
+    pen_center_lng double #电子围栏中心经度
+);
+
+drop table locates_listen_detail;

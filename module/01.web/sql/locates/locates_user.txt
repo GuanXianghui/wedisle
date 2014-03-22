@@ -1,0 +1,12 @@
+create table locates_user( #定位系统用户表
+    imei varchar(15) primary key, #IMEI用户名 15位长度
+    pwd varchar(32) not null, #密码
+    is_pen_open int not null, #是否开启电子围栏 1开启 0关闭
+    pen_radius double, #电子围栏半径 米位单位
+    pen_center_lat double, #电子围栏中心维度
+    pen_center_lng double, #电子围栏中心经度
+    is_listening int not null, #是否在监听中 1是 0否
+    listen_id int #当前定位监听ID
+);
+
+drop table locates_user;

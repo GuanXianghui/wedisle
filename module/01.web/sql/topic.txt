@@ -1,0 +1,13 @@
+create table topic(		#帖子表
+	id int auto_increment primary key,	#自增 主键
+	section_id int not null,  #版块id 不为空
+	user_id int not null,	#用户id 不为空
+	title varchar(80) not null,	#标题 不为空
+	content varchar(10000) not null,		#内容 不为空
+	tag varchar(110),	#标签 可为空 ,分隔 最多5个 每个字不得超过10个字
+	request_date varchar(8) not null,	#发布日期 不为空
+	request_time varchar(6) not null,	#发布时间 不为空
+	is_good int not null,	#是否加精 不为空 0/1
+	view_times int not null, #查看次数 不为空
+	is_delete int not null #是否被删除 0/1
+);

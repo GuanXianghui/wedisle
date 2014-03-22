@@ -1,0 +1,4 @@
+create table wedisle_work_day(		#工作日表
+	date char(8) not null unique,	#日期
+	is_work_day int not null	#是否工作日 1是工作日 0为节假日
+);

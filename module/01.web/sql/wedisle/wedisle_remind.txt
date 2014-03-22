@@ -1,0 +1,9 @@
+create table wedisle_remind(		#提醒表
+	id int auto_increment primary key,	#提醒ID 主键 自增(从1自增) 不为空
+	user_id int not null,	#用户ID 不为空
+	event varchar(100) not null,	#事件 不为空
+	date varchar(8) not null,	#日期 不为空
+	remind_type varchar(6) not null, #提醒类型 no before same time不为空
+	remind_date varchar(8),	#提醒日期 可为空
+    remind_time varchar(6) #日行时间 可为空
+);

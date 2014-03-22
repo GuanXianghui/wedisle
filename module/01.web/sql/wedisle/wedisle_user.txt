@@ -1,0 +1,16 @@
+create table wedisle_user(		#用户表
+	id int auto_increment primary key,	#用户ID 主键 自增(从1自增) 不为空
+	user_name varchar(100) not null unique,	#用户名 不为空 唯一
+	password varchar(32) not null,	#密码 不为空
+	type int not null, #用户类型 不为空 1普通用户 2管理员用户
+	email varchar(100) not null unique,	#邮箱账号 不为空 唯一
+    is_email_validate int, #邮箱是否验证 可为空 1已验证
+	mobile varchar(11),	#手机号码 可为空
+    is_mobile_validate int, #手机是否验证 可为空 1已验证
+    user_state int not null, #用户状态 不为空 1正常 2锁定 3注销
+    error_pwd_num int not null, #密码输错次数 不为空 >=0
+    friends_type varchar(500) not null, #亲友关系 不为空
+	register_date varchar(8) not null,	#注册日期 不为空 格式：yyyyMMdd
+	register_time varchar(6) not null,	#注册时间 不为空 格式：HHmmss
+	register_ip varchar(50) not null 	#注册ip 不为空
+);

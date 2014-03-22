@@ -1,0 +1,18 @@
+create table article(		#文章表
+	id int auto_increment primary key,	#文章类或者文章ID 主键 自增(从1自增) 不为空
+	pid int not null,	#所属上层文章类id 不为空
+	index_id int not null, #优先级 0~n 不为空
+	name varchar(100) not null,  #文章类名或者文章名 不为空
+	is_article_type int not null,	#是否为文章类 1是0不是 不为空
+	content varchar(20000),		#文章内容 可为空
+	image_ids varchar(100),         #图片ID集合 逗号分隔 可为空
+	request_date varchar(8) not null,	#发布日期 不为空 修改日期 暂时不记录
+	request_time varchar(6) not null,	#发布时间 不为空 修改时间 暂时不记录
+	is_delete int not null #是否被删除 1是0不是
+);
+#注意：所有文章的类都继成的文章类 为
+#(id=0,pid=-1,index_id=0,name='文章',is_article_type=1,content='',image_ids='',request_date='20130907', request_time='000000', is_delete=0);
+#对应初始化语句：
+insert into article(id, pid, index_id, name, is_article_type, content, image_ids, request_date, request_time, is_delete)
+values(null, -1, 0, '文章', 1, '', '', '20130908', '000000', 0);
+

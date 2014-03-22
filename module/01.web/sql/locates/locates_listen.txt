@@ -1,0 +1,9 @@
+create table locates_listen( #定位监听表
+    listen_id int primary key auto_increment, #定位监听ID(从开始，监听，到结束)
+    imei varchar(15) not null, #IMEI用户名 15位长度
+    is_listening int not null, #是否在监听中 1是 0否
+    start_date_time varchar(14) not null, #开始监听时间 yyyyMMddHHmmss
+    end_date_time varchar(14) #结束监听时间 yyyyMMddHHmmss
+);
+
+drop table locates_listen;
