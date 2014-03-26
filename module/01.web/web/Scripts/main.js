@@ -134,6 +134,13 @@ $(function() {
 				
 				//function to show the content
 				function showContent(idx){
+                    /**
+                     * 选中重新选出不来东西，把class里的" selected"去掉就可以了
+                     * 2014-03-23 10:18
+                     */
+                    if(idx.indexOf(" selected") > -1){
+                        idx = idx.replace(" selected", "");
+                    }
 					$('#cc_content').stop().animate({'top':'0px'},200,function(){
 						$(this).find('.'+idx).fadeIn();
 						$('#cc_back').fadeIn();

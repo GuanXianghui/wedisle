@@ -26,6 +26,7 @@ import com.gxx.record.interfaces.BaseInterface;
 import com.gxx.record.interfaces.WedisleBaseInterface;
 import com.gxx.record.utils.IPAddressUtil;
 import com.gxx.record.utils.ServiceDataUtil;
+import com.gxx.record.utils.WedisleUtils;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.lang.StringUtils;
 import org.apache.struts2.interceptor.ServletRequestAware;
@@ -109,6 +110,7 @@ public class SignInAction extends ActionSupport implements ServletRequestAware
         }
         WedisleUser user = DBSelect.getWedisleUserByUserName(userName);
         request.getSession().setAttribute(BaseInterface.WEDISLE_USER, user);
+        WedisleUtils.refreshWedisleUserStep(user.getId());
         message = "×¢²á³É¹¦£¡";
         System.out.println(message);
         return SUCCESS;

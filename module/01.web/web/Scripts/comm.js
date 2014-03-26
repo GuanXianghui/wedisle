@@ -12,7 +12,7 @@ var sbarScrollSpeed = 10; //
 var sbarTime;   
 
 function RefreshSbar() {   
-
+     alert(11)
     var top, sbarRefreshTime;       
 
     sbarRefreshTime = sbarActiveSpeed;     

@@ -1,9 +1,12 @@
 package com.gxx.record.utils;
 
+import com.gxx.record.dao.DBSelect;
 import com.gxx.record.dao.wedisle.WedisleMainStepDao;
 import com.gxx.record.dao.wedisle.WedisleRelaFriendDao;
 import com.gxx.record.dao.wedisle.WedisleSeatInfoDao;
+import com.gxx.record.dao.wedisle.WedisleUserStepDao;
 import com.gxx.record.entities.wedisle.*;
+import com.gxx.record.interfaces.WedisleBaseInterface;
 import org.apache.commons.lang.StringUtils;
 
 import java.util.List;
@@ -365,5 +368,124 @@ public class WedisleUtils
         }
         json += "]";
         return json;
+    }
+
+    /**
+     * 刷新所有用户步骤
+     * @throws Exception
+     */
+    public static void refreshWedisleUserSteps() throws Exception
+    {
+        List<WedisleUser> users = DBSelect.queryAllWedisleUsers();
+        for(WedisleUser user : users){
+            refreshWedisleUserStep(user.getId());
+        }
+    }
+
+    /**
+     * 刷新用户步骤
+     * @throws Exception
+     */
+    public static void refreshWedisleUserStep(int userId) throws Exception
+    {
+        //新增在首页步骤第三级里而不在用户步骤里的数据
+        List<Integer> ids = DBSelect.queryAddStepIdsByUserId(userId);
+        for(Integer id : ids){
+            WedisleUserStep step = new WedisleUserStep(userId, id);
+            WedisleUserStepDao.insertWedisleUserStep(step);
+        }
+
+        //删除所有不在首页步骤第三级里的数据
+        ids = DBSelect.queryDeleteStepIdsByUserId(userId);
+        for(Integer id : ids){
+            WedisleUserStepDao.deleteWedisleUserStep(userId, id);
+        }
+    }
+
+    /**
+     * 从WedisleUserStep对象构造Json对象
+     * @param userStep
+     * @return
+     */
+    public static String getJsonFromUserStep(WedisleUserStep userStep)
+    {
+        String json = "{userId: " + userStep.getUserId() + ", " +
+                "stepId: " + userStep.getStepId() + ", " +
+                "isDone: " + userStep.getIsDone() + ", " +
+                "dispatchFriends: '" + userStep.getDispatchFriends() + "', " +
+                "dispatchTitle: '" + userStep.getDispatchTitle() + "', " +
+                "dispatchBeginDate: '" + userStep.getDispatchBeginDate() + "', " +
+                "dispatchEndDate: '" + userStep.getDispatchEndDate() + "', " +
+                "dispatchContent: '" + userStep.getDispatchContent() + "', " +
+                "dispatchHtml: '" + userStep.getDispatchHtml() + "'}";
+        return json;
+    }
+
+    /**
+     * 从List<WedisleUserStep>对象构造Json对象
+     * @param wedisleUserSteps
+     * @return
+     */
+    public static String getJsonFromWedisleUserSteps(List<WedisleUserStep> wedisleUserSteps)
+    {
+        String json = "[";
+        for(int i=0;i<wedisleUserSteps.size();i++)
+        {
+            if(i > 0)
+            {
+                json += ",";
+            }
+            json += getJsonFromUserStep(wedisleUserSteps.get(i));
+        }
+        json += "]";
+        return json;
+    }
+
+    /**
+     * 从WedisleMainStep对象构造Json对象
+     * @param mainStep
+     * @return
+     */
+    public static String getJsonFromMainStep(WedisleMainStep mainStep)
+    {
+        String json = "{id: " + mainStep.getId() + ", " +
+                "pid: " + mainStep.getPid() + ", " +
+                "level: " + mainStep.getLevel() + ", " +
+                "indexId: " + mainStep.getIndexId() + ", " +
+                "name: '" + mainStep.getName() + "', " +
+                "articleId: " + mainStep.getArticleId() + "}";
+        return json;
+    }
+
+    /**
+     * 从List<WedisleMainStep>对象构造Json对象
+     * @param wedisleMainSteps
+     * @return
+     */
+    public static String getJsonFromWedisleMainSteps(List<WedisleMainStep> wedisleMainSteps)
+    {
+        String json = "[";
+        for(int i=0;i<wedisleMainSteps.size();i++)
+        {
+            if(i > 0)
+            {
+                json += ",";
+            }
+            json += getJsonFromMainStep(wedisleMainSteps.get(i));
+        }
+        json += "]";
+        return json;
+    }
+
+    /**
+     * 从邮件模版中替换变量 返回替换后的内容
+     * @param model
+     * @param key
+     * @param value
+     * @return
+     */
+    public static String replaceEmailModelWithValue(String model, String key, String value)
+    {
+        return model.replaceAll(WedisleBaseInterface.DISPATCH_REPLACE_STRING + key, value);
     }
 }

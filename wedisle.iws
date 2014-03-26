@@ -61,43 +61,7 @@
       <file leaf-file-name="main.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/01.web/web/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="57" selection-start="7231" selection-end="7231" vertical-scroll-proportion="0.51945525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/01.web/web/style/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="11" selection-start="3200" selection-end="3210" vertical-scroll-proportion="-10.96">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wedisle_main_step.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/01.web/sql/wedisle/wedisle_main_step.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="90" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainStepManageAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/wedisle/MainStepManageAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="38" selection-start="1623" selection-end="1645" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WedisleMainStepDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/wedisle/WedisleMainStepDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="23" selection-start="6692" selection-end="6692" vertical-scroll-proportion="0.0">
+            <state line="568" column="5" selection-start="25557" selection-end="25579" vertical-scroll-proportion="0.9222904">
               <folding />
             </state>
           </provider>
@@ -113,22 +77,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/module/01.web/web/tool/remind/queryRemindsBetweenTime.jsp" />
+        <option value="$PROJECT_DIR$/module/01.web/web/Scripts/comm.js" />
+        <option value="$PROJECT_DIR$/module/01.web/web/showArticles.jsp" />
+        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/DB.java" />
+        <option value="$PROJECT_DIR$/module/01.web/src/config.properties" />
+        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/interfaces/WedisleBaseInterface.java" />
+        <option value="$PROJECT_DIR$/module/01.web/sql/wedisle/wedisle_user_step.txt" />
+        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/entities/wedisle/WedisleUserStep.java" />
         <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/utils/WedisleUtils.java" />
-        <option value="$PROJECT_DIR$/module/01.web/web/tool/remind/queryRemindsBetweenDate.jsp" />
-        <option value="$PROJECT_DIR$/module/01.web/web/remind.jsp" />
-        <option value="$PROJECT_DIR$/module/01.web/web/style/homePlus.css" />
+        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/wedisle/WedisleUserStepDao.java" />
+        <option value="$PROJECT_DIR$/module/01.web/web/dispatch/dispatch.jsp" />
+        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/utils/EmailUtils.java" />
+        <option value="$PROJECT_DIR$/module/01.web/web/sendEmail.jsp" />
+        <option value="$PROJECT_DIR$/module/01.web/web/dispatch/doneTask.jsp" />
+        <option value="$PROJECT_DIR$/module/01.web/web/style/main.css" />
+        <option value="$PROJECT_DIR$/module/01.web/web/dispatch/sendEmail.jsp" />
         <option value="$PROJECT_DIR$/module/01.web/web/main.jsp" />
-        <option value="$PROJECT_DIR$/module/01.web/web/tool/tool_seat.jsp" />
-        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/listener/WedisleListener.java" />
-        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/listener/WedisleStartListener.java" />
-        <option value="$PROJECT_DIR$/module/01.web/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/module/01.web/web/tool/remind/operateRemind.jsp" />
-        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/wedisle/AddRelaFriendAction.java" />
-        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/DBSelect.java" />
-        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/wedisle/WedisleRemindDao.java" />
-        <option value="$PROJECT_DIR$/module/01.web/src/com/gxx/record/listener/WedisleStartThread.java" />
-        <option value="$PROJECT_DIR$/module/01.web/web/main.html" />
       </list>
     </option>
   </component>
@@ -233,7 +197,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -303,34 +267,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedisle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedisle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -350,12 +286,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
@@ -366,9 +302,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -376,17 +312,17 @@
       <recent name="com.gxx.record.entities.wedisle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\04.my_projects\wedisle\module\01.web\web\dispatch" />
       <recent name="D:\04.my_projects\wedisle\module\01.web\web" />
-      <recent name="D:\04.my_projects\wedisle\module\01.web\web\tool" />
+      <recent name="D:\04.my_projects\wedisle\module\01.web\web\images" />
       <recent name="D:\04.my_projects\wedisle\module\01.web\web\style" />
-      <recent name="D:\04.my_projects\wedisle\module\01.web\web\tool\remind" />
       <recent name="D:\04.my_projects\wedisle\module\01.web\sql\wedisle" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\01.my_projects\wedisle\module\01.web\web" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.mainStepManage.jsp">
+  <component name="RunManager" selected="Tomcat Server.main.jsp">
     <configuration default="false" name="tool_seat.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 6">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/tool/tool_seat.jsp" />
       <option name="UPDATING_POLICY" value="update-resources" />
@@ -535,6 +471,102 @@
         </option>
       </method>
     </configuration>
+    <configuration default="false" name="DB" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gxx.record.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.gxx.record.dao.DB" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="01.web" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 6">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/main.jsp" />
+      <option name="UPDATING_POLICY" value="update-resources" />
+      <deployment>
+        <artifact name="01.web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_wedisle" />
+        <option name="HTTP_PORT" value="80" />
+      </server-settings>
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55482" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="     " />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="     " />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="     " />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="     " />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="     " />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="     " />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="01.web:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -555,24 +587,6 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -602,6 +616,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -640,17 +672,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -674,6 +695,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -745,9 +777,11 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tool_seat.jsp" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.mainStepManage.jsp" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DB" />
+      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.main.jsp" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -807,31 +841,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51290876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59552497" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50774527" sideWeight="0.66717327" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.6694529" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32826748" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924012" sideWeight="0.2444062" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924012" sideWeight="0.16179001" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.83821" sideWeight="0.3275076" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18541034" sideWeight="0.36144578" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6385542" sideWeight="0.32522798" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51462996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -870,7 +904,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -941,108 +975,86 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/wedisle/WedisleRemindDao.java">
+    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/utils/EmailUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="23" selection-start="5030" selection-end="5030" vertical-scroll-proportion="0.0" />
+        <state line="21" column="26" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/web/tool/remind/operateRemind.jsp">
+    <entry file="file://$PROJECT_DIR$/module/01.web/web/sendEmail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="77" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0" />
+        <state line="9" column="54" selection-start="515" selection-end="515" vertical-scroll-proportion="-6.107143" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/utils/HttpClientUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="68" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-17.285715" />
+        <state line="122" column="32" selection-start="3404" selection-end="3411" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/listener/WedisleStartListener.java">
+    <entry file="file://$PROJECT_DIR$/module/01.web/web/dispatch/dispatch.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="195" selection-end="195" vertical-scroll-proportion="-0.16396396" />
+        <state line="29" column="76" selection-start="1822" selection-end="1828" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/DBSelect.java">
+    <entry file="file://$PROJECT_DIR$/module/01.web/web/distribute.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1560" column="12" selection-start="49711" selection-end="49711" vertical-scroll-proportion="0.03505535" />
+        <state line="179" column="16" selection-start="10591" selection-end="10936" vertical-scroll-proportion="-9.5" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/src/func/verifycode/RandomValidateCode.java">
+    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/wedisle/WedisleUserStepDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="77" selection-start="911" selection-end="1178" vertical-scroll-proportion="-1.5675676">
-          <folding />
-        </state>
+        <state line="137" column="23" selection-start="5055" selection-end="5055" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/listener/WedisleStartThread.java">
+    <entry file="file://$PROJECT_DIR$/module/01.web/web/dispatch/doneTask.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="17" selection-start="2912" selection-end="2912" vertical-scroll-proportion="0.75315315">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="5" column="10" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/sql/wedisle/wedisle_rela_friend.txt">
+    <entry file="file://$PROJECT_DIR$/module/01.web/web/style/cp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="577" column="1" selection-start="10445" selection-end="10445" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/utils/WedisleUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="464" column="25" selection-start="14151" selection-end="14151" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/01.web/sql/wedisle/wedisle_user_step.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="426" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/01.web/web/tool/step/mainStepManage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="60" selection-start="8736" selection-end="8750" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="88" selection-start="7695" selection-end="7715" vertical-scroll-proportion="-7.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/dao/wedisle/WedisleMainStepDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="23" selection-start="6692" selection-end="6692" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/01.web/sql/wedisle/wedisle_main_step.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="90" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="211" column="60" selection-start="8736" selection-end="8750" vertical-scroll-proportion="-7.357143" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/wedisle/MainStepManageAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="38" selection-start="1623" selection-end="1645" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="188" column="58" selection-start="7123" selection-end="7123" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/01.web/src/com/gxx/record/wedisle/SignInAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="56" selection-start="3395" selection-end="3395" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/01.web/web/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="11" selection-start="3200" selection-end="3210" vertical-scroll-proportion="-10.96">
+        <state line="497" column="1" selection-start="9559" selection-end="9559" vertical-scroll-proportion="0.4864865" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/01.web/web/dispatch/sendEmail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="114" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.61621624">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/01.web/web/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="57" selection-start="7231" selection-end="7231" vertical-scroll-proportion="0.51945525">
+        <state line="568" column="5" selection-start="25557" selection-end="25579" vertical-scroll-proportion="0.9222904">
           <folding />
         </state>
       </provider>

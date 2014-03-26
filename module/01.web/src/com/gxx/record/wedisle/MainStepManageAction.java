@@ -19,6 +19,7 @@ package com.gxx.record.wedisle;
 
 import com.gxx.record.dao.wedisle.WedisleMainStepDao;
 import com.gxx.record.entities.wedisle.WedisleMainStep;
+import com.gxx.record.utils.WedisleUtils;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.lang.StringUtils;
 
@@ -173,6 +174,8 @@ public class MainStepManageAction extends ActionSupport
                 }
                 WedisleMainStep step = WedisleMainStepDao.getWedisleMainStepById(Integer.parseInt(id));
                 WedisleMainStepDao.deleteWedisleMainStep(step);
+                //刷新所有用户步骤
+                WedisleUtils.refreshWedisleUserSteps();
                 message = "删除二级菜单成功！";
                 System.out.println(message);
                 return SUCCESS;
@@ -184,6 +187,8 @@ public class MainStepManageAction extends ActionSupport
                 int maxIndexId = WedisleMainStepDao.getMaxIndexFromLevelAndPid(3, Integer.parseInt(id));
                 WedisleMainStep step = new WedisleMainStep(Integer.parseInt(id), 3, maxIndexId+1, name, Integer.parseInt(articleId));
                 WedisleMainStepDao.insertWedisleMainStep(step);
+                //刷新所有用户步骤
+                WedisleUtils.refreshWedisleUserSteps();
                 message = "新增三级菜单成功！";
                 System.out.println(message);
                 return SUCCESS;
@@ -206,6 +211,8 @@ public class MainStepManageAction extends ActionSupport
             {
                 WedisleMainStep step = WedisleMainStepDao.getWedisleMainStepById(Integer.parseInt(id));
                 WedisleMainStepDao.deleteWedisleMainStep(step);
+                //刷新所有用户步骤
+                WedisleUtils.refreshWedisleUserSteps();
                 message = "删除三级菜单成功！";
                 System.out.println(message);
                 return SUCCESS;

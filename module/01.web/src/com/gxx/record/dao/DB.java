@@ -2,6 +2,7 @@ package com.gxx.record.dao;
 
 import com.gxx.record.interfaces.BaseInterface;
 import com.gxx.record.utils.PropertyUtil;
+import ztree.dao.ArticleDao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -78,7 +79,7 @@ public class DB
         ResultSet rs = null;
         try
         {
-            rs = stmt.executeQuery(sql.toLowerCase());
+            rs = stmt.executeQuery(sql);//.toLowerCase()
         } catch (SQLException e)
         {
             if (rs != null)
@@ -113,7 +114,7 @@ public class DB
         Statement stmt = DB.createStatement(conn);
         try
         {
-            stmt.executeUpdate(sql.toLowerCase());
+            stmt.executeUpdate(sql);//.toLowerCase()
         } finally
         {
             DB.close(stmt);

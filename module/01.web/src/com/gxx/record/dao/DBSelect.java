@@ -1606,4 +1606,125 @@ public class DBSelect
             DB.close(c);
         }
     }
+
+    /**
+     * 查所有用户
+     * @return
+     * @throws Exception
+     */
+    public static List<WedisleUser> queryAllWedisleUsers() throws Exception
+    {
+        List<WedisleUser> list = new ArrayList<WedisleUser>();
+        String sql = "SELECT id, user_name,password,type,email,is_email_validate,mobile,is_mobile_validate," +
+                "user_state,error_pwd_num,friends_type,register_date,register_time,register_ip" +
+                " FROM WEDISLE_USER";
+        Connection c = DB.getConn();
+        Statement stmt = DB.createStatement(c);
+        ResultSet rs = DB.executeQuery(c, stmt, sql);
+        try
+        {
+            if (rs == null)
+            {
+                throw new RuntimeException("数据库操作出错，请重试！");
+            }
+            while (rs.next())
+            {
+                int id = rs.getInt("id");
+                String userName = rs.getString("user_name");
+                String password = rs.getString("password");
+                int type = rs.getInt("type");
+                String email = rs.getString("email");
+                boolean emailValidate = 1 == rs.getInt("is_email_validate");
+                String mobile = rs.getString("mobile");
+                boolean mobileValidate = 1 == rs.getInt("is_mobile_validate");
+                int userState = rs.getInt("user_state");
+                int errorPwdNum = rs.getInt("error_pwd_num");
+                String friendsType = rs.getString("friends_type");
+                String registerDate = rs.getString("register_date");
+                String registerTime = rs.getString("register_time");
+                String registerIp = rs.getString("register_ip");
+                WedisleUser user = new WedisleUser(id, userName, password, type, email, emailValidate,
+                        mobile, mobileValidate, userState, errorPwdNum, friendsType, registerDate,
+                        registerTime, registerIp);
+                list.add(user);
+            }
+
+            return list;
+        } finally
+        {
+            DB.close(rs);
+            DB.close(stmt);
+            DB.close(c);
+        }
+    }
+
+    /**
+     * 新增在首页步骤第三级里而不在用户步骤里的数据
+     * @param userId
+     * @return
+     * @throws Exception
+     */
+    public static List<Integer> queryAddStepIdsByUserId(int userId) throws Exception
+    {
+        List<Integer> list = new ArrayList<Integer>();
+        String sql = "SELECT id from wedisle_main_step where level=3"
+                + " AND id not in (SELECT step_id from wedisle_user_step where user_id=" + userId + ")";
+        Connection c = DB.getConn();
+        Statement stmt = DB.createStatement(c);
+        ResultSet rs = DB.executeQuery(c, stmt, sql);
+        try
+        {
+            if (rs == null)
+            {
+                throw new RuntimeException("数据库操作出错，请重试！");
+            }
+            while (rs.next())
+            {
+                int id = rs.getInt("id");
+                list.add(new Integer(id));
+            }
+
+            return list;
+        } finally
+        {
+            DB.close(rs);
+            DB.close(stmt);
+            DB.close(c);
+        }
+    }
+
+    /**
+     * 删除所有不在首页步骤第三级里的数据
+     * @param userId
+     * @return
+     * @throws Exception
+     */
+    public static List<Integer> queryDeleteStepIdsByUserId(int userId) throws Exception
+    {
+        List<Integer> list = new ArrayList<Integer>();
+        String sql = "SELECT step_id from wedisle_user_step where user_id=" + userId
+                + " AND step_id not in (SELECT id from wedisle_main_step where level=3)";
+        Connection c = DB.getConn();
+        Statement stmt = DB.createStatement(c);
+        ResultSet rs = DB.executeQuery(c, stmt, sql);
+        try
+        {
+            if (rs == null)
+            {
+                throw new RuntimeException("数据库操作出错，请重试！");
+            }
+            while (rs.next())
+            {
+                int stepId = rs.getInt("step_id");
+                list.add(new Integer(stepId));
+            }
+
+            return list;
+        } finally
+        {
+            DB.close(rs);
+            DB.close(stmt);
+            DB.close(c);
+        }
+    }
 }

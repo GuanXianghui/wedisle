@@ -193,5 +193,5 @@ $(function() {
 					};				
 				return { init : init };			
 			})();			
-			$sidescroll.init();			
+			$sidescroll.init();
 		});

@@ -419,12 +419,26 @@ button.btn_idoit {
 	filter:alpha(opacity=70);
 	margin-top:-65px
 }
-.btn_idone {
-	background-color:#393
+button.btn_idone {
+    font-size:18px;
+    height:50px;
+    line-height:40px;
+    width:180px;
+    border:solid 5px rgba(255,255,255,.5);
+    border-radius:25px;
+    text-align:center;
+    opacity:.9;
+    filter:alpha(opacity=70);
+    margin-top:-65px;
+    background-color:#393;
 }
 button.btn_idoit:hover {
-	opacity:1;
-	filter:alpha(opacity=100)
+    opacity:1;
+    filter:alpha(opacity=100)
+}
+button.btn_idone:hover {
+    opacity:1;
+    filter:alpha(opacity=100)
 }
 .flex-control-paging li a {
 	text-indent:0;
@@ -434,4 +448,59 @@ button.btn_idoit:hover {
 	line-height: 30px;
 	font-size: 14px;
 	color:#fff
+}
+.taskOwners {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.taskOwners li {
+	line-height:30px;
+}
+.taskOwners li b {
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	width:100px;
+	padding:5px;
+	padding-left:25px;
+	background:url(../images/ico_man_gray.png) left center no-repeat;
+	margin-right:20px;
+	line-height:20px;
+	height:20px
+}
+.taskOwners li i {
+	display:inline-block;
+	*display:inline;
+	zoom:1
+	width:100px;
+	padding:5px;
+	padding-left:25px;
+	background:url(../images/ico_cellphone.png) left center no-repeat;
+	margin-right:20px;
+	line-height:20px;
+	height:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-style:normal
+}
+.taskOwners li .imgIco {
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	margin-right:10px;
+	padding:5px;
+	line-height:20px;
+	height:20px;
+	width:30px
+}
+.taskOwners li .imgIco:hover {
+	box-shadow:0 0 5px rgba(0,0,0,.3)
+}
+.img_mail {
+	background:url(../images/ico_envelope.png) center center no-repeat;
+}
+.img_no_mail {
+    background:url(../images/ico_noemail.jpg) center center no-repeat;
+}
+.img_qq {
+	background:url(../images/img_qq.png) center center no-repeat;
 }
